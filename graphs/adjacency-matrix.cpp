@@ -7,7 +7,7 @@ int main() {
   int n,m;              // Inputs : n = no. nodes, m = no. edges
   cin >> n >> m;
 
-  int adj[n+1][m+1];        // if 1-based graph.   -> if 0-based graph, take n X m
+  int adj[n+1][m+1];        // if 1-based indexing graph.   -> if 0-based indexing graph, take n X m : i.e. adj[n][m]
 
   for(int i = 0; i<m; i++){
         int u, v;          // edge between node u and v will be provided on each line in the edges matrix
