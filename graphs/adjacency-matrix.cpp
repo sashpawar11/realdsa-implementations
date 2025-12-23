@@ -3,7 +3,7 @@
 using namespace std;
 int main() {
 
-  // Adjacency Matrix Representation for Undirected Graph
+  // Adjacency Matrix Representation for Graphs
   int n,m;              // Inputs : n = no. nodes, m = no. edges
   cin >> n >> m;
 
@@ -13,9 +13,10 @@ int main() {
         int u, v;          // edge between node u and v will be provided on each line in the edges matrix
         cin >> u >> v;
 
-        // undirected graph --> mark edge and opposite edge (bi-directional) as 1
+        // for undirected graph --> mark edge and opposite edge (bi-directional) as 1
         adj[u][v] = 1;
         adj[v][u] = 1;
+        // for directed graph, we would not have line 18, as edge between u-v is the only edge.
   }
 
 
